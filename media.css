@@ -1,0 +1,187 @@
+@media (max-width:1200px) {
+    .head{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .head-input input{
+        max-width: 300px;
+    }
+    .head-right{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-bottom: 15px;
+    }
+
+
+    section{
+        margin: 0px;
+    }
+    .section-right{
+        display: none;
+    }
+    .section-down{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+
+
+    .article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+    .cards-main{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 7px 0px 7px;
+    }
+
+
+
+
+    .nav-inputs{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+
+
+    .footer-title-second{
+        width: 600px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:650px) {
+    .cards-main{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .main-button button{
+        width: 280px;
+    }
+    .card-main{
+        padding: 0px 15px;
+    }
+    .card-main img{
+        width: 280px;
+        height: 340px;
+    }
+
+    .card-podtext-right  h3{
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    .card-podtext-right  p{
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 22.5px;
+    }
+
+
+
+    .footer-title-second{
+        width: 525px;
+    }
+
+    footer h1{
+        font-size: 36px;
+        max-width: 500px;
+        line-height: 45px;
+    }
+}
+
+
+
+
+
+@media (max-width:500px) {
+    .head-input input{
+        max-width: 0px;
+        padding: 0px;
+    }
+    .head-left-logo{
+        position: relative;
+    }
+    .head-left-logo img{
+        position: absolute;
+        right: 60px;
+    }
+    .head-right{
+        display: none;
+    }
+    .head-burger{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .head-burger img{
+        position: absolute;
+        bottom: 13px;
+        left: 134px;
+        cursor: pointer;
+    }
+    .burger{
+        display: block;
+        width: 30px;
+        height: 18px;
+        position: absolute;
+        bottom: 12px;
+        left: 170px;
+        cursor: pointer;
+    }
+    
+    .burger span{
+        height: 2px;
+        width: 80%;
+        transform: scale(1);
+        background-color: white;
+    }
+    
+    .burger::before, .burger::after{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: white;
+        transition: all 0.3s;
+    }
+    
+    .burger::before { top: 0; }
+    .burger::after { bottom: 0; }
+    
+    .burger.active span {transform: scale(0)}
+    
+    
+    .burger.active::before{
+        top: 42%;
+        transform: rotate(-45deg); translate: (0, -50%);
+    }
+    
+    
+    .burger.active::after{
+        bottom: 47%;
+        transform: rotate(45deg); translate: (0, 50%);
+    }
+}
