@@ -9,9 +9,8 @@
     }
     .head-right{
         display: flex;
-        flex-direction: column;
         align-items: end;
-        margin-bottom: 15px;
+        margin-bottom: 40px;
     }
 
 
